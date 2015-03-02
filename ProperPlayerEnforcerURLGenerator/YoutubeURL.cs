@@ -9,7 +9,7 @@ namespace ProperPlayerEnforcerURLGenerator
     using System.Text.RegularExpressions;
     public class YoutubeURL
     {
-        private const string _pattern = @"(?:\w*://).*/(?:watch\?v=)?(\w*)";
+        private const string _pattern = @"(?:\w*://).*/(?:watch\?v=)?(.{11})";
         private string _inputURL;
         public string VideoID { get { return GetVideoID(); } }
         public string LongYTURL { get { return @"https://www.youtube.com/watch?v=" + VideoID; } }
