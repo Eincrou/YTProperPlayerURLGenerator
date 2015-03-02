@@ -1,0 +1,44 @@
+﻿<Window x:Class="ProperPlayerEnforcerURLGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ProperPlayerEnforcerURLGenerator"
+        Title="Youtube Proper Player Enforcer URL Generator" Height="500" Width="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Image Source="Resources/Stereo3DProductions-small.jpg" Margin="15,5"/>
+            <Image Source="Resources/flash_enabled_logo_horizont_s.jpg" Margin="15,5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="5" x:Name="primaryStackPanel">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Target="{Binding ElementName=urlInput}" Margin="5,0">Youtube _URL:</Label>
+                <TextBox x:Name="urlInput" Width="300" Margin="5,0"/>
+                <Button Content="Get Proper URL" Margin="5,0" Click="GetURLButton_Click"/>
+                <Button x:Name="copyURLButton" Content="Copy Enforcer URL" Margin="5,0" Click="CopyToClipboard_Click"/>
+            </StackPanel>
+            <ListView x:Name="URLsList" ItemsSource="{Binding URLs}" Margin="5,10,5,0" HorizontalAlignment="Center">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Original URL" Width="180">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBox Text="{Binding Path=ShortYTURL, Mode=OneWay}" IsReadOnly="True" BorderBrush="{x:Null}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Enforce Proper Player URL" Width="425" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBox x:Name="EnforcerURL" Text="{Binding Path=EnforcerURL, Mode=OneWay}" IsReadOnly="True" BorderBrush="{x:Null}" />                                    
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Window>
