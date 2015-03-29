@@ -99,7 +99,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Adobe Flash Player.ico" />
+    <Content Include="Resources\Adobe Flash Player.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\flash_enabled_logo_horizont.jpg" />
     <Content Include="Resources\Stereo3DProductions-small.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

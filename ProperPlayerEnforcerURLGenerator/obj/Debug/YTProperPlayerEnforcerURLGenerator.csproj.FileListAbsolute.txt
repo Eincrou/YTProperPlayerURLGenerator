@@ -14,3 +14,21 @@ F:\+Development\+Practice Projects\YoutubeProperPlayerEnforcerURLGenerator\Prope
 F:\+Development\+Practice Projects\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\ProperPlayerEnforcerURLGenerator.g.resources
 F:\+Development\+Practice Projects\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\ProperPlayerEnforcerURLGenerator.Properties.Resources.resources
 F:\+Development\+Practice Projects\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\YTProperPlayerEnforcerURLGenerator.csproj.GenerateResource.Cache
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\bin\Debug\ProperPlayerEnforcerURLGenerator.exe.config
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\ProperPlayerEnforcerURLGenerator.exe
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\ProperPlayerEnforcerURLGenerator.pdb
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\bin\Debug\Resources\Stereo3DProductions-small.jpg
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\bin\Debug\Resources\flash_enabled_logo_horizont_s.jpg
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\bin\Debug\ProperPlayerEnforcerURLGenerator.exe
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\bin\Debug\ProperPlayerEnforcerURLGenerator.pdb
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\YTProperPlayerEnforcerURLGenerator.csprojResolveAssemblyReference.cache
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\MainWindow.g.cs
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\App.g.cs
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\ProperPlayerEnforcerURLGenerator_Content.g.cs
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\ProperPlayerEnforcerURLGenerator_MarkupCompile.cache
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\ProperPlayerEnforcerURLGenerator_MarkupCompile.lref
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\MainWindow.baml
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\ProperPlayerEnforcerURLGenerator.g.resources
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\ProperPlayerEnforcerURLGenerator.Properties.Resources.resources
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\obj\Debug\YTProperPlayerEnforcerURLGenerator.csproj.GenerateResource.Cache
+F:\+Development\+Projects - Practice\YoutubeProperPlayerEnforcerURLGenerator\ProperPlayerEnforcerURLGenerator\bin\Debug\Resources\Adobe Flash Player.ico

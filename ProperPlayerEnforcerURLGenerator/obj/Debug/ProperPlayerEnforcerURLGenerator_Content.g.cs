@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/adobe%20flash%20player.ico")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/flash_enabled_logo_horizont.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/stereo3dproductions-small.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/flash_enabled_logo_horizont_s.jpg")]

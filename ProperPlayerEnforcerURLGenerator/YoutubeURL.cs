@@ -11,7 +11,7 @@ namespace ProperPlayerEnforcerURLGenerator
     {
         private const string _pattern = @"(?:\w*://).*/(?:watch\?v=)?(.{11})";
         private string _inputURL;
-        public string VideoID { get { return GetVideoID(); } }
+        public string VideoID { get { return GetVideoID(_inputURL); } }
         public string LongYTURL { get { return @"https://www.youtube.com/watch?v=" + VideoID; } }
         public string ShortYTURL { get { return @"http://youtu.be/" + VideoID; } }
         public string EnforcerURL{get{return @"http://www.interleave-vr.com/youtube-proper-player.php?v="+VideoID;}}
@@ -22,10 +22,15 @@ namespace ProperPlayerEnforcerURLGenerator
             _inputURL = inputURL;
         }
 
-        private string GetVideoID()
+        public static string GetVideoID(string url)
         {
+            //if (Regex.IsMatch(_inputURL,@"youtube.com/watch?v=()"))
+            //{
+                
+            //}
+
             Regex RX = new Regex(_pattern);
-            Match m = RX.Match(_inputURL);
+            Match m = RX.Match(url);
             if (m.Success && m.Groups[1].Success)
                 return m.Groups[1].Value;
             else
