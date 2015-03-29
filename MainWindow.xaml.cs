@@ -1,34 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 
 namespace ProperPlayerEnforcerURLGenerator
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    using System.Collections.ObjectModel;
-    using System.Windows.Media.Animation;
     public partial class MainWindow : Window
     {
-        public ObservableCollection<YoutubeURL> URLs { get; set; }
+        public ObservableCollection<YouTubeURL> URLs { get; set; }
         SolidColorBrush AnimatedURLsInputBrush = new SolidColorBrush(Colors.White);
         public MainWindow()
         {
             InitializeComponent();
 
-            URLs = new ObservableCollection<YoutubeURL>();
+            URLs = new ObservableCollection<YouTubeURL>();
             URLsList.ItemsSource = URLs;
             copyURLButton.IsEnabled = false;
 
@@ -38,22 +30,22 @@ namespace ProperPlayerEnforcerURLGenerator
             this.RegisterName("AnimatedURLsInputBrush", AnimatedURLsInputBrush);
         }
 
-        private void AddYoutubeURLToList(string urlToAdd)
+        private void AddYouTubeURLToList(string urlToAdd)
         {
             var duplicateURLs =
-                from YoutubeURL url in URLs
-                where url.VideoID == YoutubeURL.GetVideoID(urlToAdd)
+                from YouTubeURL url in URLs
+                where url.VideoID == YouTubeURL.GetVideoID(urlToAdd)
                 select url;
 
             if (duplicateURLs.Count() == 0)
-                URLs.Add(new YoutubeURL(urlInput.Text));
+                URLs.Add(new YouTubeURL(urlInput.Text));
             else
                 MessageBox.Show("This URL is valid, but already in the list.", "Duplicate URL Detected");
         }
 
         private void GetURLButton_Click(object sender, RoutedEventArgs e)
         {            
-            if (YoutubeURL.ValidateYTURL(urlInput.Text))
+            if (YouTubeURL.ValidateYTURL(urlInput.Text))
             {
                 
                 ColorAnimation colorAnim = new ColorAnimation(Colors.White, Colors.LightGreen, TimeSpan.FromMilliseconds(200));
@@ -62,7 +54,7 @@ namespace ProperPlayerEnforcerURLGenerator
                 Storyboard storyboard = new Storyboard();
                 storyboard.AutoReverse = true;
                 storyboard.Children.Add(colorAnim);                
-                AddYoutubeURLToList(urlInput.Text);                
+                AddYouTubeURLToList(urlInput.Text);                
                 URLsList.SelectedIndex = URLs.Count - 1;
                 copyURLButton.IsEnabled = true;
                 storyboard.Begin(this);
